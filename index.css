@@ -1,0 +1,179 @@
+body {
+    background-color: #240b4d;
+    color: #5fec42;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(Montserrat-ExtraBold.ttf);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(Roboto_Condensed-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAV */
+.nav-lateral {
+    background-color: #8114c0;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    border-right: 3px solid rgb(24, 255, 24);
+    font-family: "mySecondFont";
+    font-size: 22px;
+    text-align: center;
+}
+
+.nav-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-lateral a {
+    display: block;
+    color: #c277ff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.nav-lateral a:hover {
+    background-color: #8114c0;
+    color: #6A6768;
+    transform: translateX(5px);
+}
+
+/* LINK ACTIVO */
+.nav-lateral a.active {
+    background-color: #46fa82;
+    /* terracota elegante */
+    color: #430b63;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* CONTENIDO */
+.contenido {
+    padding: 40px;
+}
+
+/* SECCIONES */
+section {
+    margin-bottom: 60px;
+    background-color: #36c928;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(124, 46, 250, 0.08);
+}
+
+/* TITULOS */
+h2 {
+    border-left: 2px dashed rgb(29, 255, 29);
+    padding-left: 10px;
+    border-right: 2px dashed #73f825;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    color: #0E1328;
+    font-family: "myFirstFont";
+    text-align: center;
+}
+
+/* IFRAME */
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* VIDEO */
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* IMAGEN */
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ASIDE */
+.aside-info {
+    background-color: #8114c0;
+    color: #c277ff;
+    padding: 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    border-left: 3px                  solid #3efa25;
+}
+
+h4{
+    font-family: "myFirstFont";
+    font-size: 30px;
+}
+
+p{
+    font-family: "mySecondFont";
+    font-size: 22px;    
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+
+    .nav-lateral {
+        position: relative;
+        height: auto;
+        width: 100%;
+        border-right: none;
+    }
+
+    .contenido {
+        padding: 20px;
+    }
+
+    .aside-info {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        border-left: none;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 576px) {
+
+    .nav-lateral ul {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+    }
+
+    .nav-lateral a {
+        white-space: nowrap;
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}

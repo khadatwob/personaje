@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proceso de Creación de productos multimedia</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- NAV -->
+    <nav class="col-md-2 nav-lateral">
+      <ul>
+        <li><a href="#investigacion">Investigación</a></li>
+        <li><a href="#Creacion-Personaje">Creación de Personaje</a></li>
+        <li><a href="#concepto-grafico">Concepto gráfico</a></li>
+        <li><a href="#idea">Idea</a></li>
+        <li><a href="#sketch">Sketch</a></li>
+        <li><a href="#wireframe">Wireframe</a></li>
+        <li><a href="#mockup">Mockup</a></li>
+        <li><a href="#prototipo">Prototipo</a></li>
+      </ul>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <main class="col-md-8 contenido">
+
+      <section id="investigacion">
+        <h2>Investigación</h2>
+        <iframe src="Referencias de creacion.pdf" width="100%"></iframe>
+      </section>
+
+      <section id="Creacion-Personaje">
+        <h2>Creación de Personaje</h2>
+        <iframe src="Creacion_de_Personaje_BYTE.pdf" width="100%"></iframe>
+      </section>
+
+      <section id="concepto-grafico">
+        <h2>Concepto Gráfico</h2>
+        <iframe src="CONCEPTOCREATIVO.pdf" width="100%"></iframe>
+      </section>
+
+      <section id="idea">
+        <h2>Idea</h2>
+        <iframe src="Idea.png" width="100%"></iframe>
+      </section>
+
+      <section id="sketch">
+        <h2>Sketch</h2>
+        <iframe src="Sketch.jpeg" width="100%"></iframe>
+      </section>
+
+      <section id="wireframe">
+        <h2>Wireframe</h2>
+        <iframe src="WIREFRAME.png" width="100%"></iframe>
+      </section>
+
+      <section id="mockup">
+        <h2>Mockup</h2>
+        <iframe src="MOCKUP.png" width="100%"></iframe>
+      </section>
+      <section id="prototipo">
+        <h2>Prototipo</h2>
+        <iframe src="PROTOTIPO.png" width="100%"></iframe>
+      </section>
+
+    </main>
+
+    <!-- ASIDE -->
+    <aside class="col-md-2 aside-info">
+      <h4>Fases</h4>
+      <p>1.Recolección de información</p>
+      <p>2. Exploración visual</p>
+      <p>3. Concepto gráfico</p>
+      <p>4. Idea</p>
+      <p>5. Post-producción</p>
+      <p>6. Producción</p>
+    </aside>
+
+  </div>
+</div>
+
+<!-- SCRIPT PARA NAV ACTIVO -->
+<script>
+  const links = document.querySelectorAll(".nav-lateral a");
+
+  links.forEach(link => {
+    link.addEventListener("click", function () {
+
+      links.forEach(l => l.classList.remove("active"));
+      this.classList.add("active");
+
+    });
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
